@@ -1,0 +1,18 @@
+---
+pageable: true
+per_page: 12
+---
+
+header
+	h1
+	  = data.general.tag_title.html
+	  span &nbsp; ⁄ &nbsp;
+	  = articles.size
+
+= partial "entries", locals: locals
+
+- content_for :title do
+  = data.general.tag_title.text
+
+- content_for :description do
+  = data.general.tag_title.text

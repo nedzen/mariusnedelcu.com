@@ -1,0 +1,54 @@
+// COLORS ---------------------------------------
+$gray-light:         #F4F4F4;
+$gray:               #C3C3C3;
+$selection-color:    #FFFFAB;
+$debug-mode:         false;
+$enable-transitions: true;
+// GENERAL ---------------------------------------
+// $font-family-base :  'Inter-UI-Regular';
+$font-family-base :  'Lato', sans-serif;
+$mono-ff:             'Overpass Mono', monospace;
+$font-size-base:      18px !default;
+$font-weight-base:    normal;
+$line-height-base:    1.5em !default;
+
+$font-directory-path: '../fonts/';
+$body-color:          #000000;
+$body-bg:             $gray-light;
+
+// Links
+$link-color:                 #000;
+$link-decoration:            none !default;
+$link-hover-color:           #000;
+$link-hover-decoration:      none !default;
+
+
+// STRUCTURE ---------------------------------------
+// not yet activated. - will do later maybe
+
+$site-width: 1350px;
+$unit: 30px;
+
+// BOOTSTRAP GRID
+$enable-grid-classes:       true !default;
+$grid-gutter-width:         $unit !default;
+$grid-columns:              8 !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: $site-width
+) !default;
+
+// Navbar Variables
+$nav-height: 60px;

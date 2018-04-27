@@ -1,0 +1,24 @@
+- wrap_layout :layout do
+
+  #main
+    .wrap
+      / figure class=current_article.data.title.downcase.gsub(' ', '-')
+      figure
+        = image_tag "/images#{current_article.url}#{current_article.data.cover}"
+
+      .row.blog-intro
+        .col-8
+          h1 = current_article.data.title
+          ul.project-tags.linear
+            li = current_article.date.strftime('%B %e, %Y')
+            - current_article.tags.each do |tag|
+              li = tag
+
+          p = current_article.data.description
+
+      .row.blog-post
+        .col-8
+          = preserve do
+            == yield
+
+    = partial "nav_article", locals: { category: "blog", articles: blog.articles, current_article: current_article }

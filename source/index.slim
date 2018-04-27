@@ -1,0 +1,33 @@
+---
+title: Digital product design studio
+pageable: true
+per_page: 10
+---
+#experiment
+
+#main
+  .wrap
+    .lead.homepage
+      .row
+        .col-3
+          h1 UI/UX and Branding
+        .col-4
+          p Being a designer at heart I am comitted to find innovative solutions for building digital products. Trough a methodical approach developped over years of experience working with startups and established companies I aim to augument impact, create value and ultimately exceed expectations.
+          p =link_to 'more info', 'about', :class=> 'more-info'
+
+    = partial "entries_featured", locals: locals
+
+#journal
+  .wrap
+    .row
+      .col-3
+        strong.h3 Journal
+      .col-4
+        ul.journal-entry
+          - blog.articles.select do |article|
+            - if article.data.category == 'blog'
+              li
+                =link_to article.url do
+                  span =article.date.strftime('%B %e, %Y')
+                  h2 =article.data.title
+                  p =truncate(article.data.intro, :length => 140)

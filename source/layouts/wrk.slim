@@ -1,0 +1,27 @@
+- wrap_layout :layout do
+
+  #main
+    .wrap
+      figure
+        = image_tag "/images#{current_article.url}#{current_article.data.cover}"
+
+      .row.work-intro
+        .col-2
+          h3 = current_article.data.year
+          ul.project-tags
+            - current_article.tags.each do |tag|
+              li = tag
+
+        .col-4
+          h1 = current_article.data.title
+          ul.project-tags.linear
+            - current_article.tags.each do |tag|
+              li = tag
+          p = current_article.data.description
+
+      .row.work-showcase
+        .col-8
+          = preserve do
+            == yield
+
+    = partial "nav_work", locals: { category: "featured", articles: blog.articles, current_article: current_article }

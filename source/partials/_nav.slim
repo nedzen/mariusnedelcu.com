@@ -1,0 +1,17 @@
+#navbar
+	.wrap
+		.row
+			.col-3
+				- if current_page.url == ('/')
+					=link_to 'Marius Nedelcu', '/', class: 'brand active'
+				- else
+					=link_to 'Marius Nedelcu', '/', class: 'brand'
+			.col-5
+				ul.main-nav.nav-list
+					li
+						- if current_page.url != ('/work') && current_page.url != ('/about/') && current_page.url != ('/') && current_page.url != ('/contact/')
+							= link_to 'Work', '/work', class: 'active'
+						- else
+							= link_to 'Work', '/work', class: is_page_active('/#work')
+					li = link_to 'About', '/about/', class: is_page_active('/about/')
+					li = link_to 'Contact', '/contact/', class: is_page_active('/contact/')

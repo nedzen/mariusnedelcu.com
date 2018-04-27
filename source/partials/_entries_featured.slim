@@ -1,0 +1,15 @@
+ul#featured
+  - blog.articles.select do |article|
+    - if article.data.category == 'featured'
+      li.ft-work-entry
+        a href='#{article.url}' title='#{article.title}'
+          .ft-work-entry-img
+            figure: img src="images#{article.url}#{article.data.cover}" alt="#{article.title}"
+
+          .ft-work-entry-info
+            .left
+              h3 = article.data.title
+              span = article.data.meta
+            .right
+              p = article.data.intro
+              / p: span.more-info find out more

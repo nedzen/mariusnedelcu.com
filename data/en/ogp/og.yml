@@ -1,0 +1,9 @@
+title: mariusnedelcu.com
+site_name: mariusnedelcu.com
+locale: en_US
+type: website
+description: 'Marius Nedelcu provides services of UI/UX and branding.'
+image:
+  '': 'http://www.mariusnedelcu.com/images/home_og.png'
+  width: 1200
+  height: 600

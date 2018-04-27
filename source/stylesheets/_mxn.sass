@@ -1,0 +1,125 @@
+=showunit($a)
+	position: relative
+	*
+		position: relative
+	&:hover
+		&:before
+			opacity: 1
+	&:before
+		+transition(300ms)
+		opacity: 0.3
+		content: '#{$a} '
+		color: pink
+		background-color: black
+		+position(absolute, auto, 100%, 100%, auto)
+		font-size: 13px!important
+		line-height: 15px!important
+		height: 15px !important
+		min-height: 15px !important
+		font-weight: normal!important
+		border-radius: 2px !important
+		display: block !important
+		padding: 0 5px !important
+		font-family: sans-serif !important
+
+// mixin for quick debugging
+=debug($i: null, $c: red, $c2: blue)
+	@if $i
+		#{$i}
+			outline: 1px dotted $c
+	@else
+		outline: 1px dotted $c2
+//
+// @if $debug-mode
+// 	+media-breakpoint-only(xs)
+// 		+debug('*', pink)
+// 	+media-breakpoint-only(sm)
+// 		+debug('*', fuchsia)
+// 	+media-breakpoint-only(md)
+// 		+debug('*', orange)
+// 	+media-breakpoint-only(lg)
+// 		+debug('*', blue)
+// 	+media-breakpoint-up(xl)
+// 		+debug('*', red)
+
+// -------------
+
+=display-flex
+	display: -webkit-box!important
+	display: -webkit-flex!important
+	display: -moz-box!important
+	display: -moz-flex!important
+	display: -ms-flexbox!important
+	display: flex!important
+
+=position($pos:null, $a:0, $b:0, $c:null, $d:null)
+	@if $pos == absolute
+		position: absolute
+		top: $a
+		right: $b
+		bottom: $c
+		left: $d
+
+	@else if $pos == stretch
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+
+	@else if $pos
+		position: $pos
+		@if $pos == fixed && $a == 0
+			top: $a
+			right: $b
+			bottom: $c
+			left: $d
+
+	@else if $pos
+		position: $pos
+		@if $a == 0
+			// do nothing
+		@else
+			top: $a
+			right: $b
+			bottom: $c
+			left: $d
+
+// Mixin image
+=background-image($img)
+	background-image: url(image-path($img))
+	// background-repeat: repeat
+
+// usefull for quickly hiding elements
+=hide($x:null)
+	@if $x=='hidden'
+		visibility: hidden
+	@else if $x
+		display: $x
+	@else
+		display: none
+
+=height-adjust($a: 100%)
+	&:before
+		content: ""
+		display: block
+		padding-top: $a
+
+=rotate( $val: -2deg )
+	-webkit-transform: rotate($val)
+	-moz-transform: rotate($val)
+	-ms-transform: rotate($val)
+	-o-transform: rotate($val)
+	transform: rotate($val)
+
+=user-select($select)
+	-webkit-user-select: $select
+	-moz-user-select: $select
+	-ms-user-select: $select
+	user-select: $select
+
+=selection
+	::-moz-selection
+		@content
+	::selection
+		@content

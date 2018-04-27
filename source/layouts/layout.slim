@@ -1,0 +1,19 @@
+doctype 5
+html
+  head
+    = partial 'meta'
+    = stylesheet_link_tag 'app', 'https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700', 'https://fonts.googleapis.com/css?family=Lato:400,400i,700'
+    = stylesheet_link_tag :github
+    = javascript_include_tag 'application'
+    = partial 'ga'
+
+  body
+    = partial "grid"
+
+    = partial "nav"
+    - if content_for? :main
+      == yield_content :main
+    - else
+      == yield
+
+    = partial "footer"

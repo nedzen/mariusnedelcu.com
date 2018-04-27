@@ -1,0 +1,94 @@
+.overlay
+  display: none
+  z-index: 1
+  +position(fixed, 0, 0, 0, 0)
+  background-color: transparentize(yellow, .7)
+
+.grid
+  // for presentational purposes
+  height: 100vh
+  background: transparentize(fuchsia, .6)
+  div[class^="col"]
+    height: 100vh
+    outline: 1px solid fuchsia
+    background-color: transparentize(fuchsia, .6)
+/* Inter UI Font (unhinted) */
+
+// @font-face
+// 	font-family: 'Inter-UI-Regular'
+// 	src: url("../fonts/Inter-UI-Regular.woff2") format("woff2"), url("../fonts/Inter-UI-Regular.woff") format("woff")
+// 	font-style:  normal
+// 	font-weight: 400
+//
+// body
+// 	font-family: 'Inter-UI-Regular'
+
+=add-font($font-name, $font-weight, $font-style)
+  @font-face
+    font-family: $font-name
+    src: url($font-directory-path + $font-name + '.woff2') format('woff2'), url($font-directory-path + $font-name + '.woff') format('woff')
+    font-weight: $font-weight
+    font-style: $font-style
+
+/*nedzen*/
++add-font('Inter-UI-Regular', normal, 400)
++add-font('Inter-UI-Bold', normal, 700)
+/*nedzen*/
+
+
+//
+// @font-face {
+//   font-family: 'Inter UI';
+//   src: url("Inter UI (web)/Inter-UI-Italic.woff2") format("woff2"),
+//        url("Inter UI (web)/Inter-UI-Italic.woff") format("woff");
+//   font-style:  italic;
+//   font-weight: 400;
+// }
+//
+// @font-face {
+//   font-family: 'Inter UI';
+//   src: url("Inter UI (web)/Inter-UI-Medium.woff2") format("woff2"),
+//        url("Inter UI (web)/Inter-UI-Medium.woff") format("woff");
+//   font-style:  normal;
+//   font-weight: 500;
+// }
+//
+// @font-face {
+//   font-family: 'Inter UI';
+//   src: url("Inter UI (web)/Inter-UI-MediumItalic.woff2") format("woff2"),
+//        url("Inter UI (web)/Inter-UI-MediumItalic.woff") format("woff");
+//   font-style:  italic;
+//   font-weight: 500;
+// }
+//
+// @font-face {
+//   font-family: 'Inter UI';
+//   src: url("Inter UI (web)/Inter-UI-Bold.woff2") format("woff2"),
+//        url("Inter UI (web)/Inter-UI-Bold.woff") format("woff");
+//   font-style:  normal;
+//   font-weight: 700;
+// }
+//
+// @font-face {
+//   font-family: 'Inter UI';
+//   src: url("Inter UI (web)/Inter-UI-BoldItalic.woff2") format("woff2"),
+//        url("Inter UI (web)/Inter-UI-BoldItalic.woff") format("woff");
+//   font-style:  italic;
+//   font-weight: 700;
+// }
+//
+// @font-face {
+//   font-family: 'Inter UI';
+//   src: url("Inter UI (web)/Inter-UI-Black.woff2") format("woff2"),
+//        url("Inter UI (web)/Inter-UI-Black.woff") format("woff");
+//   font-style:  normal;
+//   font-weight: 900;
+// }
+//
+// @font-face {
+//   font-family: 'Inter UI';
+//   src: url("Inter UI (web)/Inter-UI-BlackItalic.woff2") format("woff2"),
+//        url("Inter UI (web)/Inter-UI-BlackItalic.woff") format("woff");
+//   font-style:  italic;
+//   font-weight: 900;
+// }

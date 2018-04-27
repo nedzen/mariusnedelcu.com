@@ -1,0 +1,6 @@
+index:
+  lead: mariusnedelcu.com independent design studio focused on crafting awesome digital products.
+  name: Marius Nedelcu
+  tag_title:
+    text: "#%{tag}"
+    html: "#%{tag}"

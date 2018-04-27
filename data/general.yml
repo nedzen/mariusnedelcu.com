@@ -1,0 +1,22 @@
+studioname: MN
+fallbacktitle: MN | UI/UX and branding
+url: http://mariusnedelcu.com/
+cname: mariusnedelcu.com
+description: mariusnedelcu.com - webstudio for digital products
+author: mariusnedelcu.com
+
+file_not_found: File not found
+archives: Archives
+tag_title:
+  text: "#%{tag}"
+  html: "#%{tag}"
+calendar_title:
+    text: "Entries from %{title}"
+    html: "Entries from <time>%{title}</time>"
+    format:
+      day: "%d, %b, %Y"
+      month: "%b %Y"
+      year: "%Y"
+
+layout:
+  footertext: "&copy; mariusnedelcu.com"

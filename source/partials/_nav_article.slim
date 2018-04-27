@@ -1,0 +1,23 @@
+#page-nav.wrap
+  .row
+    .col-2
+    .col-6
+      
+      - scoped_articles = articles.select{|article|article.data["category"] == category }
+      - current_article_index = scoped_articles.map{|art|art.title}.index(current_article.title)
+      - next_article = scoped_articles.try(:[], current_article_index+1)
+
+      - if next_article.present?
+        div.gonext
+          = link_to next_article.url do
+            span Next
+            h2
+              = next_article.title
+              | &nbsp; →
+
+      - if next_article.nil?
+        div.gonext = link_to scoped_articles.first.url do
+          span End
+          h2
+            = scoped_articles.first.title
+            | &nbsp; →

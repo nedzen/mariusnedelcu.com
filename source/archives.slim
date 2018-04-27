@@ -1,0 +1,18 @@
+header style="margin-top: 50px"
+  h1= data.general.archives
+
+ul#archives
+  - blog.articles.select {|a| a.data[:public] }.group_by {|a| a.date.year }.each do |year, year_articles|
+    - year_articles.group_by {|a| a.date.month }.each do |month, month_articles|
+      li
+        h2 style="margin: 20px 0"
+          = Date.new(year, month).strftime(data.general.calendar_title.format.month)
+        ul.entries style="margin: 5px 0"
+          - month_articles.each do |article|
+            li
+              = link_to article.url do
+                time = article.date.strftime('%Y/%m/%d')
+                span.title style="margin-left: 10px" = article.title
+
+- content_for :title do
+  = data.general.archives
