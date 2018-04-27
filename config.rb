@@ -141,7 +141,7 @@ activate :deploy do |deploy|
   deploy.method = :git
   deploy.branch = 'gh-pages'
   # deploy.remote = "https://#{ENV['GH_TOKEN']}@github.com/nebulae2016/#{cname}.git"
-  deploy.remote = "git@github.com:nedzen/portfolio.git"
+  deploy.remote = "git@github.com:nedzen/mariusnedelcu.com.git"
 end
 
 helpers do
