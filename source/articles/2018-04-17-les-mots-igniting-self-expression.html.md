@@ -19,7 +19,7 @@ ogp:
 ---
 
 ###Telling the story
-When my help was solicited on the project it felt like a thrilling challenge. Working closely with the founders we shaped the story of a writing school that didn’t yet existed. Next we launched a website to present the concept and to enquire visitors about their interest in a project as such. For this purpose I produced a number of illustrations to complement the storry and set the ambient. These were used on the website and in a strategic PDF presentation of the project.
+When my help was solicited on the project it felt like a thrilling challenge. Working closely with the founders we shaped the story of a writing school that didn’t yet exist. Next, we launched a website to present the concept and to enquire visitors about their interest in a project as such. For this purpose, I produced a number of illustrations to complement the story and set the ambient. These were used on the website and in a strategic PDF presentation of the project.
 
 We shortly discovered that many people loved the concept and were eager to engage. Their motivations were varied and knowing about them helped further inform the strategy and the design.
 
@@ -28,7 +28,7 @@ We shortly discovered that many people loved the concept and were eager to engag
 </figure>
 
 ###Branding
-The aesthetic of the logo was mainly inspired by the name: LES MOTS. It’s commonness had to be played to it’s advantage and I found appropriate to have it written in uppercase such that it further emphasises the importance of words as pillars of human communication. The space between the letters it is meant to evoke openness, one of the core values of the school. The logotype also has a subtle resemblance with the typographic style used in chapter titles of victorian age books; hopefully marking the beginning of a new chapter in the life of anyone who takes on writing.
+The aesthetic of the logo was mainly inspired by the name: LES MOTS. Its commonness had to be played to its advantage and I found appropriate to have it written in uppercase such that it further emphasizes the importance of words as pillars of human communication. The space between the letters it is meant to evoke openness, one of the core values of the school. The logotype also has a subtle resemblance with the typographic style used in chapter titles of Victorian age books; hopefully marking the beginning of a new chapter in the life of anyone who takes on writing.
 
 The challenge was eventually met. The resulting identity looks modern, elegant and has great versatility standing out in large and small sizes.
 
@@ -48,13 +48,13 @@ Creative direction
 </figure>
 
 ###The online platform
-Before LES MOTS opened it’s doors it was essential to create a website that would reflect the unique nature of the school and let visitors discover and inscribe on courses.
+Before LES MOTS opened its doors it was essential to create a website that would reflect the unique nature of the school and let visitors discover and inscribe on courses.
 
 To achieve that I have designed a general coherent online experience by addressing these 3 challenges:
 
 To effectively communicate the concept along with the people involved and their roles.
 To present the commercial offer in a structured manner so that visitors quickly discover the courses that interest them.
-To give a hint at the benefits of joining LES MOTS by featuring regular events and content produced by enrolled students during courses
+To give a hint at the benefits of joining LES MOTS by featuring regular events and content produced by enrolled students in courses
 
 <figure>
 	<img src="/images/les-mots-igniting-self-expression/web_home.jpg" alt="Setkeeper Logo - Geometry">

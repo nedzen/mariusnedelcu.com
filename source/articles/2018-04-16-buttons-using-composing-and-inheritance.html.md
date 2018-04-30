@@ -63,6 +63,6 @@ So far so good, what we need to do next is to swap the components within `btn`, 
 - `btn.yellow_hover > btn > btn.yellow_hover__bg, btn-txt__white`
 - `btn.yellow_active > btn > btn.yellow_active__bg, btn-txt__white`
 
-Ok, I realise this post is starting to look a bit odd but hold tight ! Naming is important and we're almost done. In order to have everything work as intended all **constraints on all nested elements should be set to: top & left, right & bottom.**
+Ok, I realize this post is starting to look a bit odd but hold tight! Naming is important and we're almost done. In order to have everything work as intended all **constraints on all nested elements should be set to the top & left right & bottom.**
 And that's pretty much it. Now when you want to change border radius for all your buttons (regardless of style) you just have to change it once on btn__bg root component. Same for texts.
 here's a [link to the working file.](https://www.figma.com/file/ZAeQqE7ueXkHA5H7ANq50X9d/sandbox?node-id=1%3A2)
