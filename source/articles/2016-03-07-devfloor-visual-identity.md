@@ -1,7 +1,7 @@
 ---
 title: Devfloor Visual Identity
 date: 2016-03-07 12:55 CET
-tags: pranding, print
+tags: Branding, Symbol
 intro: Branding for a coworking space in Paris dedicated to developers
 description: A logo for a newly opened coworking space dedicated to developers. To be used in conjunction with NUMA’s logo and sometimes as a standalone symbol
 meta: Paris, 12 nov 2017

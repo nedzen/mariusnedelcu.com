@@ -1,8 +1,8 @@
 ---
-title: LES MOTS - Igniting self expression
+title: LES MOTS - Igniting self-expression
 date: 2018-04-17 19:01 EEST
 tags: visual identity, UI and UX
-intro: A writing school in the center of Paris where anyone can enrol on courses given by established writers.
+intro: A writing school in the center of Paris where anyone can enroll on courses given by established writers.
 description: This unique approach to teaching writing raised interest from the start. 60% of the courses were booked in less than 3 weeks after opening. LES MOTS is now established in it’s singularity having expanded it’s program to include a wider variety of courses and events. Since it’s debut in jan 2016 it received increased interest. This is shown by the growing number of people enrolled with each new semester as well as registered users and overall websites visits.
 meta: Paris, Jan 2017
 year: '2017'
@@ -12,11 +12,12 @@ cover: 'lesmots_cover.jpg'
 ogp:
   og:
     image:
-      '': http://mariusnedelcu.com/images/gorgias-long-term-design-partners/lesmots_cover.jpg
+      '': http://mariusnedelcu.com/images/les-mots-igniting-self-expression/lesmots_cover.jpg
       type: image/png
       width: 992
       height: 525
 ---
+
 
 ###Telling the story
 When my help was solicited on the project it felt like a thrilling challenge. Working closely with the founders we shaped the story of a writing school that didn’t yet exist. Next, we launched a website to present the concept and to enquire visitors about their interest in a project as such. For this purpose, I produced a number of illustrations to complement the story and set the ambient. These were used on the website and in a strategic PDF presentation of the project.

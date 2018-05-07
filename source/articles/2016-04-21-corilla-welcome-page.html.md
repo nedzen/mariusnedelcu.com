@@ -5,6 +5,7 @@ tags: UI/UX, onboarding, motion
 intro: Facilitating users onboarding by presenting the core functionality of a product in three simple animations
 description: Corilla, a platform for technical writing, approached me to provide a solution for their after signin welcome page. Users landed on the existing page, an article explaining Corilla, and got stuck. I came up with a solution to show users how the platform works.
 meta: Paris, 12 nov 2017
+year: '2016'
 public: true
 category: featured
 cover: 'corilla_step1.gif'

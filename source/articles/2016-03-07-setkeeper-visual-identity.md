@@ -1,7 +1,7 @@
 ---
 title: Setkeeper Visual Identity
 date: 2016-03-07 14:08 CET
-tags: Branding, symbol
+tags: Branding, Logo, Symbol
 intro: Established film production management app changes name in order to appeal to an international market
 description: 'Identity for a film production management app'
 meta: Paris, 12 nov 2017

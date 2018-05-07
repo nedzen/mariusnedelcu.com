@@ -1,5 +1,5 @@
 ---
-title: Long term design partners
+title: Long-term design partners
 date: 2018-03-21 02:38 EET
 tags: Branding, UI and UX
 intro: Rebranding and redesign for Gorgias a revolutionary helpdesk service

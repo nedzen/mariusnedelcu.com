@@ -1,8 +1,8 @@
 ---
-title: Demoday Visual Identity
+title: Demo Day Visual Identity
 date: 2016-03-07 15:40 CET
 tags: Logo, Art Direction, Typography
-intro: Branding and Art direction for a recurring event marking the end of the startup acceleration season at NUMA
+intro: Branding and Art Direction for a recurring event marking the end of the startup acceleration season at NUMA
 description: Demo Day is an important recurring event marking the end of the startup acceleration season at NUMA. It's attended by investors, press and entrepreneurs. A logo and a poster were designed for the promotion of the event.
 meta: Paris, 12 nov 2017
 public: true
