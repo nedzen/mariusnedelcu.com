@@ -690,3 +690,30 @@ ul.journal-entry
 
 +selection
 	background-color: #FFFFAB
+
+// -------------------------
+// LAZYLOAD EXPERIMENT
+// -------------------------
+
+picture, img, iframe
+	display: block
+	border: 0 none
+	opacity: 1
+	transition: opacity .25s
+	width: 500px
+	height: 281px
+	background: #f2f2f2
+	outline: 0 none
+
+iframe
+	width: 560px
+	height: 315px
+
+
+img[data-src]:not([src^="data:image"]),
+img[data-srcset]:not([src^="data:image"]),
+iframe[data-src]
+	opacity: 0
+
+img[data-srcset][src=""]
+	content: url("data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==")
