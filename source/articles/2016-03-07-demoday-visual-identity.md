@@ -5,6 +5,7 @@ tags: Logo, Art Direction, Typography
 intro: Branding and Art Direction for a recurring event marking the end of the startup acceleration season at NUMA
 description: Demo Day is an important recurring event marking the end of the startup acceleration season at NUMA. It's attended by investors, press and entrepreneurs. A logo and a poster were designed for the promotion of the event.
 meta: Paris, 12 nov 2017
+year: '2016'
 public: true
 category: featured
 cover: 'demoday_main.png'

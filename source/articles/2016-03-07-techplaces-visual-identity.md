@@ -5,6 +5,7 @@ tags: Branding, UI/UX
 intro: Reseau des cantines - Network of coworking spaces and tech hubs in France, rebranded into Techplaces.
 description: 'Reseau des cantines, a large network of coworking spaces and tech hubs in France, rebranded into Techplaces.'
 meta: Paris, 12 nov 2017
+year: '2016'
 public: true
 category: featured
 cover: 'techplaces_main.gif'
