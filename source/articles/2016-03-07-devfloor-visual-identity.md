@@ -8,6 +8,7 @@ meta: Paris, 12 nov 2017
 public: true
 category: featured
 cover: 'devfloor_main.png'
+thumb: 'sq_cover.png'
 ogp:
   og:
     image:

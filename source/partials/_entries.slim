@@ -4,7 +4,7 @@ ul#work-entries
       li.work-entry class=article.url.gsub('/', '')
         a href='#{article.url}' title='#{article.title}'
           .work-entry-img
-            figure: img src="/images#{article.url}#{article.data.cover}" alt="#{article.title}"
+            figure: img src="/images#{article.url}#{article.data.thumb || article.data.cover}" alt="#{article.title}"
             span = article.data.intro
           .work-entry-info
             h3 = article.data.title

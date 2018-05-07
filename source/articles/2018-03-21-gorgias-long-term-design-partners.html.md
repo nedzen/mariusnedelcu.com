@@ -9,6 +9,7 @@ year: '2018'
 public: true
 category: featured
 cover: 'gorgias-cover.jpg'
+thumb: 'sq_cover.png'
 ogp:
   og:
     image:
@@ -41,9 +42,9 @@ UX and UI for the mobile app.
 
 <figure>
   <ul class="mobile-frame">
-    <li><div><img src="/images/gorgias-long-term-design-partners/tk_05_alt_@2x.png" alt="UI previews"></div></li>
-    <li><div><img src="/images/gorgias-long-term-design-partners/tklst_01_@2x.png" alt="UI previews"></div></li>
-    <li><div><img src="/images/gorgias-long-term-design-partners/tklst_03_@2x.png" alt="UI previews"></div></li>
+    <li><img src="/images/gorgias-long-term-design-partners/mobile_1.png" alt="UI previews"></li>
+    <li><img src="/images/gorgias-long-term-design-partners/mobile_2.png" alt="UI previews"></li>
+    <li><img src="/images/gorgias-long-term-design-partners/mobile_3.png" alt="UI previews"></li>
   </ul>
 </figure>
 
@@ -54,8 +55,8 @@ Because it is used as an iOS icon, a reduced aesthetic reinforces the recognizab
 </figure>
 
 <ul class="project-info">
-  <li><a href="http://www.gorgias.io">gorgias.io</a></li>
-  <li><a href="http://www.gorgias.io">project on dribbbble</a></li>
+  <li><a target="_blank" href="http://www.gorgias.io">gorgias.io</a></li>
+  <li><a target="_blank" href="https://dribbble.com/shots/4288684-helpdesk-stats">project on dribbbble</a></li>
 </ul>
 
 <div class="client">
