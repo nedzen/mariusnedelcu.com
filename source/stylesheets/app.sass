@@ -351,9 +351,13 @@ li.ft-work-entry
 
 	a
 		display: block
+		h3
+			border-bottom: 1px solid white
+			display: inline-block!important
+			+transition(200ms)
 		&:hover
 			h3
-				text-decoration: underline
+				border-bottom: 1px solid black
 
 	+media-breakpoint-up(xl)
 		.ft-work-entry-img:before
@@ -381,20 +385,47 @@ li.ft-work-entry
 				&:before
 					+position(absolute, 0px, auto, 0px, -999px)
 
-%message-shared
+%placeholder
 	position: relative
 	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAErSURBVHgB7ZaJasQgEIbVmPP9HzUQctp+0mmNuJtNm7Ls4g8Scsx8cynRfd879QQZ9SRlcAa/H9iWZam2bfPLuf/d0lprVRSFv2oX0JZlUdM0XR4AoKqqlLX255mLKNwCJ4grBAwo8F0w4zg60meFAj7Ps/qLaCPQUOu6+rZanLOIqG3b78jE4LfwGEolP5P0YGTCF8Mw7EqMIQ7OCrsQik98CxTZ0ECi8i++BkH6Q+kfUV3XuyECKj5D2ZQxHxKEZMtV4LcmPjW5tOlWwEkwEgOB45ABpGQx3BijmqbZTe496F1wCo7jrut8r1jcA413xBH0ECxwKbtklNp+iO9klxzpEIxwxJDEPQx19tTTZ/+5wvMWAaLsZ4/ZhzIOBeCK4zT/CGRwBr8++ANSm8qC7ffFNQAAAABJRU5ErkJggg==')
 	background-color: $gray-light
 	background-size: 29px
 	background-position: 0px 0px
-	// outline: 1px solid red
-	img
+	overflow: hidden
+	img, picture
 		/*hight*/
 		+position(stretch)
 
 .placeholder-main-entry
-	@extend %message-shared
-	+height-adjust(48.8%)
+	@extend %placeholder
+
+
+.placeholder
+	@extend %placeholder
+	&.ar-2054
+		+height-adjust(48.8%)
+	&.ar-0732
+		+height-adjust(146.4%)
+	&.ar-15
+		+height-adjust(66.6%)
+	&.ar-070
+		+height-adjust(141.1%)
+
+
+// position: relative
+// background-color: pink
+// height: 0
+// padding-bottom: 56.25%
+// margin-bottom: 40px
+
+.img-container img
+	background-color: green
+	position: absolute
+	width: 100%
+	height: 100%
+	object-fit: cover
+
+
 
 
 .ft-work-entry-info
@@ -408,7 +439,6 @@ li.ft-work-entry
 		margin-bottom: $unit/2
 		span
 			display: block
-			padding-top: $unit/4
 			color: $gray
 
 	+media-breakpoint-up(md)
@@ -526,8 +556,54 @@ li.work-entry
 	figure
 		display: block
 
+picture.trei
+	// margin-top: $unit
+
 .work-showcase
 	padding-bottom: $unit * 2
+	section
+		&:not(:last-child)
+			margin-bottom: $unit
+			// figure padding needs some adjusting
+			// the padding is not responsive
+			// outline: 1px solid green
+			+media-breakpoint-up(md)
+				// outline: 1px solid red
+				margin-bottom: $unit * 2
+			+media-breakpoint-up(lg)
+				// outline: 1px solid pink
+				margin-bottom: $unit * 3
+
+
+
+// thumbnails
+section.negative
+	position: relative
+	display: block
+	margin-left: - $unit/2
+	margin-right: - $unit/2
+	+clearfix
+
+ul.thumbs
+	+clearfix
+	display: block
+	// +clearfix
+	position: relative
+	li
+		display: block
+		float: left
+		padding-left: $unit/2
+		padding-right: $unit/2
+		margin-bottom: $unit
+		width: 100%
+		+media-breakpoint-up(sm)
+			width: 100/2 * 1%
+		+media-breakpoint-up(md)
+			width: 100/3 * 1%
+		+media-breakpoint-up(lg)
+			width: 100/4 * 1%
+
+
 
 	figure
 		// background-color: #CCCCCC
@@ -558,8 +634,12 @@ li.work-entry
 			width: $col * 2
 		p
 			width: $col * 5
+		picture.trei
+			width: 73%
 
 	+media-breakpoint-up(xl)
+		picture.trei
+			width: 73%
 		p
 			width: $col * 4
 
@@ -703,7 +783,6 @@ ul.journal-entry
 		+media-breakpoint-up(xl)
 			max-width: $col * 4
 
-
 +selection
 	background-color: #FFFFAB
 
@@ -716,14 +795,8 @@ picture, img.lzld, iframe
 	border: 0 none
 	opacity: 1
 	transition: opacity .25s
-	width: 500px
-	height: 281px
 	background: #f2f2f2
 	outline: 0 none
-
-iframe
-	width: 560px
-	height: 315px
 
 
 img[data-src]:not([src^="data:image"]),
@@ -733,17 +806,3 @@ iframe[data-src]
 
 img[data-srcset][src=""]
 	content: url("data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==")
-
-.img-container
-	position: relative
-	background-color: pink
-	height: 0
-	padding-bottom: 56.25%
-	margin-bottom: 40px
-
-.img-container img
-	background-color: green
-	position: absolute
-	width: 100%
-	height: 100%
-	object-fit: cover
