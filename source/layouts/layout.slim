@@ -4,16 +4,55 @@ html
     = partial 'meta'
     = stylesheet_link_tag 'app', 'https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700', 'https://fonts.googleapis.com/css?family=Lato:400,400i,700'
     = stylesheet_link_tag :github
-    = javascript_include_tag 'application'
-    = partial 'ga'
+    / = javascript_include_tag 'application'
+    / = partial 'ga'
+    / = javascript_include_tag 'application'
+    / javascript:
+    /   lazyLoad();
+      // var options = {
+      //   pageUpdatedEventName: 'page:updated', // how your app tells the rest of the app an update happened
+      //   elements: 'img[data-src], img[data-srcset], source[data-srcset], iframe[data-src], video[data-src], [data-lazyload]', // maybe you just want images?
+      //   rootMargin: '0px', // IntersectionObserver option
+      //   threshold: 0, // IntersectionObserver option
+      //   maxFrameCount: 10, // 60fps / 10 = 6 times a second
+      // };
+      // lazyLoad(options);
 
-  body
-    = partial "grid"
+  body#barba-wrapper
+    .barba-container
+      = partial "grid"
+      = partial "nav"
+      - if content_for? :main
+        == yield_content :main
+      - else
+        == yield
 
-    = partial "nav"
-    - if content_for? :main
-      == yield_content :main
-    - else
-      == yield
+      = partial "footer"
+      = javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js'
+      = javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js'
+      = javascript_include_tag 'application'
 
-    = partial "footer"
+      javascript:
+        lazyLoad();
+
+        Barba.Pjax.start();
+
+        var HideShowTransition = Barba.BaseTransition.extend({
+        start: function() {
+          this.newContainerLoading.then(this.finish.bind(this));
+        },
+
+        finish: function() {
+          // window.body.scrollTop = 0;
+          window.scrollTo({
+            top: 0,
+            // behavior: "smooth"
+          });
+          this.done();
+          lazyLoad();
+        }
+        });
+
+        Barba.Pjax.getTransition = function() {
+          return HideShowTransition;
+        };

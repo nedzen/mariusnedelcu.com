@@ -1,14 +1,14 @@
 #= require 'lazyload.js'
 
-lazyLoad()
+# lazyLoad()
 
-options =
-  pageUpdatedEventName: 'page:updated'
-  elements: 'img[data-src], img[data-srcset], source[data-srcset], iframe[data-src], video[data-src], [data-lazyload]'
-  rootMargin: '0px'
-  threshold: 0
-  maxFrameCount: 10
-lazyLoad options
+# options =
+#   pageUpdatedEventName: 'page:updated'
+#   elements: 'img[data-src], img[data-srcset], source[data-srcset], iframe[data-src], video[data-src], [data-lazyload]'
+#   rootMargin: '0px'
+#   threshold: 0
+#   maxFrameCount: 10
+# lazyLoad options
 
 #
 # $ ->
