@@ -381,6 +381,22 @@ li.ft-work-entry
 				&:before
 					+position(absolute, 0px, auto, 0px, -999px)
 
+%message-shared
+	position: relative
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAErSURBVHgB7ZaJasQgEIbVmPP9HzUQctp+0mmNuJtNm7Ls4g8Scsx8cynRfd879QQZ9SRlcAa/H9iWZam2bfPLuf/d0lprVRSFv2oX0JZlUdM0XR4AoKqqlLX255mLKNwCJ4grBAwo8F0w4zg60meFAj7Ps/qLaCPQUOu6+rZanLOIqG3b78jE4LfwGEolP5P0YGTCF8Mw7EqMIQ7OCrsQik98CxTZ0ECi8i++BkH6Q+kfUV3XuyECKj5D2ZQxHxKEZMtV4LcmPjW5tOlWwEkwEgOB45ABpGQx3BijmqbZTe496F1wCo7jrut8r1jcA413xBH0ECxwKbtklNp+iO9klxzpEIxwxJDEPQx19tTTZ/+5wvMWAaLsZ4/ZhzIOBeCK4zT/CGRwBr8++ANSm8qC7ffFNQAAAABJRU5ErkJggg==')
+	background-color: $gray-light
+	background-size: 29px
+	background-position: 0px 0px
+	// outline: 1px solid red
+	img
+		/*hight*/
+		+position(stretch)
+
+.placeholder-main-entry
+	@extend %message-shared
+	+height-adjust(48.8%)
+
+
 .ft-work-entry-info
 	background-color: white
 	text-align: left!important

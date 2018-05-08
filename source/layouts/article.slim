@@ -3,7 +3,7 @@
   #main
     .wrap
       / figure class=current_article.data.title.downcase.gsub(' ', '-')
-      figure
+      figure.placeholder-main-entry
         = image_tag "/images#{current_article.url}#{current_article.data.cover}"
 
       .row.blog-intro
