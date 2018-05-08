@@ -574,37 +574,6 @@ picture.trei
 				// outline: 1px solid pink
 				margin-bottom: $unit * 3
 
-
-
-// thumbnails
-section.negative
-	position: relative
-	display: block
-	margin-left: - $unit/2
-	margin-right: - $unit/2
-	+clearfix
-
-ul.thumbs
-	+clearfix
-	display: block
-	// +clearfix
-	position: relative
-	li
-		display: block
-		float: left
-		padding-left: $unit/2
-		padding-right: $unit/2
-		margin-bottom: $unit
-		width: 100%
-		+media-breakpoint-up(sm)
-			width: 100/2 * 1%
-		+media-breakpoint-up(md)
-			width: 100/3 * 1%
-		+media-breakpoint-up(lg)
-			width: 100/4 * 1%
-
-
-
 	figure
 		// background-color: #CCCCCC
 		background-color: $gray-light
@@ -642,6 +611,34 @@ ul.thumbs
 			width: 73%
 		p
 			width: $col * 4
+
+// thumbnails
+section.negative
+	position: relative
+	display: block
+	margin-left: - $unit/2
+	margin-right: - $unit/2
+	+clearfix
+
+ul.thumbs
+	+clearfix
+	display: block
+	// +clearfix
+	position: relative
+	li
+		display: block
+		float: left
+		padding-left: $unit/2
+		padding-right: $unit/2
+		margin-bottom: $unit
+		width: 100%
+		+media-breakpoint-up(sm)
+			width: 100/2 * 1%
+		+media-breakpoint-up(md)
+			width: 100/3 * 1%
+		+media-breakpoint-up(lg)
+			width: 100/4 * 1%
+
 
 // .mobile-frame
 // 	+clearfix
