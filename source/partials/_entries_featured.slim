@@ -1,6 +1,6 @@
 ul#featured
   - blog.articles.select do |article|
-    - if article.data.category == 'featured'
+    - if article.data.featured == true
       li.ft-work-entry
         a href='#{article.url}' title='#{article.title}'
           .ft-work-entry-img

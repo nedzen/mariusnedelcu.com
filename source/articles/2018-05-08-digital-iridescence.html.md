@@ -7,7 +7,8 @@ description: 'Once upon a time in new york is film about loyalty and power. Lore
 meta: Bucharest, 08 May 2018
 year: '2018'
 public: true
-category: featured
+featured: false
+category: work
 cover: 'cover.jpg'
 thumb: 'sq_cover.png'
 ogp:

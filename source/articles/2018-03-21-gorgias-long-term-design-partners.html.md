@@ -7,7 +7,8 @@ description: Gorgias is a San-Francisco based startup focused on providing the b
 meta: San Francisco, Mar 2018
 year: '2018'
 public: true
-category: featured
+featured: true
+category: work
 cover: 'gorgias-cover.jpg'
 thumb: 'sq_cover.png'
 ogp:

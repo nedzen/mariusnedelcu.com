@@ -7,7 +7,8 @@ description: 'Identity for a film production management app'
 meta: Paris, 12 nov 2017
 year: '2016'
 public: true
-category: featured
+featured: true
+category: work
 cover: 'setkeeper_main.png'
 ogp:
   og:

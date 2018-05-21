@@ -7,7 +7,8 @@ description: This unique approach to teaching writing raised interest from the s
 meta: Paris, Jan 2017
 year: '2017'
 public: true
-category: featured
+featured: true
+category: work
 cover: 'lesmots_cover.jpg'
 ogp:
   og:

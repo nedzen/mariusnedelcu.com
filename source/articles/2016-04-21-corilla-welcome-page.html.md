@@ -7,7 +7,8 @@ description: Corilla, a platform for technical writing, approached me to provide
 meta: Paris, 12 nov 2017
 year: '2016'
 public: true
-category: featured
+featured: true
+category: work
 cover: 'corilla_step1.gif'
 ogp:
   og:

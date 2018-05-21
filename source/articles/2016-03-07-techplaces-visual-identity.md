@@ -7,7 +7,8 @@ description: 'Reseau des cantines, a large network of coworking spaces and tech 
 meta: Paris, 12 nov 2017
 year: '2016'
 public: true
-category: featured
+featured: true
+category: work
 cover: 'techplaces_main.gif'
 ogp:
   og:

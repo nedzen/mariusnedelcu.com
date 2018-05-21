@@ -7,7 +7,8 @@ description: Demo Day is an important recurring event marking the end of the sta
 meta: Paris, 12 nov 2017
 year: '2016'
 public: true
-category: featured
+featured: true
+category: work
 cover: 'demoday_main.png'
 ogp:
   og:

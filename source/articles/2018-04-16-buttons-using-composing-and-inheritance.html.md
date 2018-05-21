@@ -5,6 +5,8 @@ tags: visual identity, UI and UX
 intro: Attention is probably the most important function of cognition. Problem solving requires sustained focus on the subject matter in order to understand it in depth and form new ideas. As a designer you know that time to think a problem trough and understand it in it’s entirety will be repayed with a more elegant solution.
 meta: Paris, 12 nov 2017
 public: true
+featured: false
+category: work
 cover: 'img.png'
 category: 'blog'
 layout: article

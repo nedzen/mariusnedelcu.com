@@ -7,7 +7,8 @@ description: A logo for a newly opened coworking space dedicated to developers. 
 meta: Paris, 12 nov 2017
 year: '2016'
 public: true
-category: featured
+featured: true
+category: work
 cover: 'devfloor_main.png'
 thumb: 'sq_cover.png'
 ogp:
