@@ -4,6 +4,6 @@ locale: en_US
 type: website
 description: 'Marius Nedelcu provides services of UI/UX and branding.'
 image:
-  '': 'http://www.mariusnedelcu.com/images/home_og.png'
+  '': 'http://www.mariusnedelcu.com/images/og.jpg'
   width: 1200
-  height: 600
+  height: 630
