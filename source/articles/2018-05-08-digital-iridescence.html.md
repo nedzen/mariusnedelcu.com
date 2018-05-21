@@ -2,7 +2,7 @@
 title: Digital iridescence
 date: 2018-05-08 21:10 EEST
 tags: Print, digital
-intro: Art without any speciffic purpose. Because Art is like that. who needs to do art for what reasons ?
+intro: Decrypting the code for pre-cognitive aesthetic appeal.
 description: 'This self-initiated project explores two ideas. The mesmerizing appeal of highly saturated images and that of unbalanced asymmetrical compositions. It is essentially a quest to find those visual cues which attire attention and likes. These artworks were posted on ello and the community reacted to each of it differently. The aesthetic is optimized for visual satisfaction and in some works to intrigue and unset.'
 meta: Bucharest, 08 May 2018
 year: '2018'
